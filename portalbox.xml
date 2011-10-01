@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<data xmlns="http://www.wbb3addons.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wbb3addons.de/XSD/portalboxitem.xsd">
+	<import>
+		<portalboxitem name="shoutbox">
+			<className>ShoutboxBox</className>
+			<boxType>1</boxType>
+			<useCache>0</useCache>
+			<sortOrder>1</sortOrder>
+			<boxActivation>1</boxActivation>
+			<permissions>user.shoutbox.canViewShoutbox</permissions>
+			<options>module_shoutbox</options>
+		</portalboxitem>
+	</import>
+</data>
