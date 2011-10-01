@@ -197,7 +197,7 @@ $this->user->getPermission('user.shoutbox.bbcode.color')} <select
 	<option value="Azure" style="color: #F0FFFF;">Azure</option>
 </select> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.quote')} <img
-	src="wcf/icon/wysiwyg/insertQuoteM.png"
+	src="wcf/icon/wysiwyg/quoteM.png"
 	onclick="shoutbox.insertSmiley('[quote][/quote]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.code')} <img
 	src="wcf/icon/wysiwyg/insertCodeM.png"
@@ -212,7 +212,7 @@ $this->user->getPermission('user.shoutbox.bbcode.java')} <img
 	src="wcf/icon/wysiwyg/insertJavaM.png"
 	onclick="shoutbox.insertSmiley('[java][/java]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.js')} <img
-	src="wcf/icon/wysiwyg/insertJsM.png"
+	src="wcf/icon/wysiwyg/insertJavaScriptM.png"
 	onclick="shoutbox.insertSmiley('[js][/js]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.php')} <img
 	src="wcf/icon/wysiwyg/insertPhpM.png"
