@@ -108,31 +108,31 @@ $this->user->getPermission('user.shoutbox.canAddEntry')}
 </ul>
 {if $this->user->getPermission('user.shoutbox.bbcode.b')} <img
 	src="wcf/icon/wysiwyg/fontStyleBoldM.png"
-	onclick="shoutbox.insertSmiley('[b][/b]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[b]','[\/b]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.i')} <img
 	src="wcf/icon/wysiwyg/fontStyleItalicM.png"
-	onclick="shoutbox.insertSmiley('[i][/i]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[i]','[\/i]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.u')} <img
 	src="wcf/icon/wysiwyg/fontStyleUnderlineM.png"
-	onclick="shoutbox.insertSmiley('[u][/u]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[u]','[\/u]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.s')} <img
 	src="wcf/icon/wysiwyg/fontStyleStriketroughM.png"
-	onclick="shoutbox.insertSmiley('[s][/s]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[s]','[\/s]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.url')} <img
 	src="wcf/icon/wysiwyg/linkInsertM.png"
-	onclick="shoutbox.insertSmiley('[url][/url]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[url]','[\/url]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.img')} <img
 	src="wcf/icon/wysiwyg/insertImageM.png"
-	onclick="shoutbox.insertSmiley ('[img][/img]');" /> {/if} {if
+	onclick="shoutbox.insertBBCode ('[img]','[\/img]');" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.center')} <img
 	src="wcf/icon/wysiwyg/textJustifyM.png"
-	onclick="shoutbox.insertSmiley('[align=center][/align]');" alt="" />
+	onclick="shoutbox.insertBBCode('[align=center]','[\/align]');" alt="" />
 {/if} {if $this->user->getPermission('user.shoutbox.bbcode.align')} <img
 	src="wcf/icon/wysiwyg/textAlignRightM.png"
-	onclick="shoutbox.insertSmiley('[align=right][/align]');" alt="" />
+	onclick="shoutbox.insertBBCode('[align=right]','[\/align]');" alt="" />
 {/if} {if $this->user->getPermission('user.shoutbox.bbcode.size')} <select
 	name="fontsize" style="height: 20px;"
-	onchange="shoutbox.insertSmiley('[size=' + this.value + '][/size]')">
+	onchange="shoutbox.insertBBCode'[size=' + this.value + ']','[\/size]')">
 	<option value="" selected="selected">Schriftgröße:</option>
 	<option value="8" style="font-size: x-small;">sehr klein</option>
 	<option value="10" style="font-size: small;">klein</option>
@@ -143,7 +143,7 @@ $this->user->getPermission('user.shoutbox.bbcode.center')} <img
 </select> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.font')} <select
 	name="font" style="height: 20px;"
-	onchange="shoutbox.insertSmiley('[font=' + this.value + '][/font]')">
+	onchange="shoutbox.insertBBCode'[font=' + this.value + ']','[\/font]')">
 	<option value="" selected="selected">Schriftart:</option>
 	<option value="arial" style="font-family: Arial;">Arial</option>
 	<option value="comic sans ms" style="font-family: Comic Sans MS;">Comic
@@ -158,7 +158,7 @@ $this->user->getPermission('user.shoutbox.bbcode.font')} <select
 </select> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.color')} <select
 	name="fontcolor" style="height: 20px;"
-	onchange="shoutbox.insertSmiley('[color=' + this.value + '][/color]')">
+	onchange="shoutbox.insertBBCode'[color=' + this.value + ']','[\/color]')">
 	<option value="" selected="selected">Schriftfarbe:</option>
 	<option value="skyblue" style="color: skyblue;">Himmelblau</option>
 	<option value="royalblue" style="color: royalblue;">Königsblau</option>
@@ -198,31 +198,31 @@ $this->user->getPermission('user.shoutbox.bbcode.color')} <select
 </select> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.quote')} <img
 	src="wcf/icon/wysiwyg/quoteM.png"
-	onclick="shoutbox.insertSmiley('[quote][/quote]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[quote]','[\/quote]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.code')} <img
 	src="wcf/icon/wysiwyg/insertCodeM.png"
-	onclick="shoutbox.insertSmiley('[code][/code]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[code]','[\/code]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.css')} <img
 	src="wcf/icon/wysiwyg/insertCssM.png"
-	onclick="shoutbox.insertSmiley('[css][/css]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[css]','[\/css]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.html')} <img
 	src="wcf/icon/wysiwyg/insertHtmlM.png"
-	onclick="shoutbox.insertSmiley('[html][/html]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[html]','[\/html]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.java')} <img
 	src="wcf/icon/wysiwyg/insertJavaM.png"
-	onclick="shoutbox.insertSmiley('[java][/java]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[java]','[\/java]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.js')} <img
 	src="wcf/icon/wysiwyg/insertJavaScriptM.png"
-	onclick="shoutbox.insertSmiley('[js][/js]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[js]','[\/js]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.php')} <img
 	src="wcf/icon/wysiwyg/insertPhpM.png"
-	onclick="shoutbox.insertSmiley('[php][/php]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[php]','[\/php]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.mysql')} <img
 	src="wcf/icon/wysiwyg/insertMysqlM.png"
-	onclick="shoutbox.insertSmiley('[mysql][/mysql]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[mysql]','[\/mysql]');" alt="" /> {/if} {if
 $this->user->getPermission('user.shoutbox.c.java')} <img
 	src="wcf/icon/wysiwyg/insertCM.png"
-	onclick="shoutbox.insertSmiley('[c][/c]');" alt="" /> {/if}</div>
+	onclick="shoutbox.insertBBCode('[c]','[\/c]');" alt="" /> {/if}</div>
 {/if} {/if}</div>
 </div>
 </div>
