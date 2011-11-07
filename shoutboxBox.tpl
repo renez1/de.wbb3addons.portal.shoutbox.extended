@@ -37,6 +37,7 @@ function toggle(obj) {
 					me: {@$entry->me},
 					isDeletable: {@$entry->isDeletable()|intval},
 					toUserID: {@$entry->toUserID},
+					styledToUserName: '{@$entry->getStyledToUsername()|encodeJS}',
 					toUserName: '{@$entry->getStyledToUsername()|encodeJS}',
 					prefix: '{@$entry->getWhisperPrefix()|encodeJS}'
 				});
@@ -226,3 +227,4 @@ $this->user->getPermission('user.shoutbox.c.java')} <img
 {/if} {/if}</div>
 </div>
 </div>
+
