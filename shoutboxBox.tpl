@@ -119,9 +119,9 @@ $this->user->getPermission('user.shoutbox.bbcode.u')} <img
 $this->user->getPermission('user.shoutbox.bbcode.s')} <img
 	src="wcf/icon/wysiwyg/fontStyleStriketroughM.png"
 	onclick="shoutbox.insertBBCode('[s]','[\/s]');" alt="" /> {/if} {if
-$this->user->getPermission('user.shoutbox.bbcode.url')} <img
+<img
 	src="wcf/icon/wysiwyg/linkInsertM.png"
-	onclick="shoutbox.insertBBCode('[url]','[\/url]');" alt="" /> {/if} {if
+	onclick="shoutbox.insertBBCode('[url]','[\/url]');" alt="" /> {if
 $this->user->getPermission('user.shoutbox.bbcode.img')} <img
 	src="wcf/icon/wysiwyg/insertImageM.png"
 	onclick="shoutbox.insertBBCode ('[img]','[\/img]');" /> {/if} {if
