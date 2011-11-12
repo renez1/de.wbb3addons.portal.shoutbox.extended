@@ -1,14 +1,20 @@
-<script tyype="text/javascript">
+<script tyype = "text/javascript">
 smilies = null;
 function toggle(obj) {
 	var el = document.getElementById(obj);
 		if (el = 'shoutboxSmileyContainer' && smilies != 1) {
 			new Effect.Appear(obj);
 			smilies = 1;
+			saveSmilieStatus(1)
 		} else if (el = 'shoutboxSmileyContainer' && smilies == 1) {
 			new Effect.Fade(obj);
 			smilies = 0;
+			saveSmilieStatus(0)
 		}
+function saveSmilieStatus(value) {
+	var ajaxRequest = new AjaxRequest();
+	ajaxRequest.openPost('index.php?action=StatusSave'+SID_ARG_2ND, 'name=shoutboxSmilieStatus&status='+encodeURIComponent(value));
+	}
 }
 </script>
 <div class="border titleBarPanel shoutboxBox">
@@ -99,6 +105,13 @@ $this->user->getPermission('user.shoutbox.canAddEntry')}
 </form>
 {if SHOUTBOX_ENABLE_SMILEY_LIST}
 <div class="" id="shoutboxSmileyContainer" style="display: none">
+{if $this->user->shoutboxSmilieStatus == 1}
+<script type="text/javascript">
+	//<![CDATA[
+		toggle('shoutboxSmileyContainer')
+	//]]>
+</script>
+{/if}
 <ul class="smileys">
 	{foreach from=$box->smileys item=smiley}
 	<li><img onmouseover="this.style.cursor='pointer'"
