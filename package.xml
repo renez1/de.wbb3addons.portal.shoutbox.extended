@@ -7,7 +7,7 @@
 		<packagedescription><![CDATA[Adds the shoutbox to the portal.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Fügt die Shoutbox dem Portal hinzu.]]></packagedescription>
 		<packagedescription language="de-informal"><![CDATA[Fügt die Shoutbox dem Portal hinzu.]]></packagedescription>
-		<version>2.0.1</version>
+		<version>2.0.2</version>
 		<date>2011-11-11</date>
 		<plugin>com.woltlab.wbb</plugin>
 	</packageinformation>
@@ -46,6 +46,9 @@
 		<languages languagecode="en">languages/en.xml</languages>
 	</instructions>
 	<instructions type="update" fromversion="2.0.0">
+		<templates>templates.tar</templates>
+	</instructions>
+	<instructions type="update" fromversion="2.0.1">
 		<templates>templates.tar</templates>
 	</instructions>
 </package>
