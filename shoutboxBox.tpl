@@ -143,7 +143,7 @@ $this->user->getPermission('user.shoutbox.bbcode.center')} <img
 	onclick="shoutbox.insertBBCode('[align=right]','[\/align]');" alt="" />
 {/if} {if $this->user->getPermission('user.shoutbox.bbcode.size')} <select
 	name="fontsize" style="height: 20px;"
-	onchange="shoutbox.insertBBCode'[size=' + this.value + ']','[\/size]')">
+	onchange="shoutbox.insertBBCode('[size=' + this.value + ']','[\/size]')">
 	<option value="" selected="selected">Schriftgröße:</option>
 	<option value="8" style="font-size: x-small;">sehr klein</option>
 	<option value="10" style="font-size: small;">klein</option>
@@ -154,7 +154,7 @@ $this->user->getPermission('user.shoutbox.bbcode.center')} <img
 </select> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.font')} <select
 	name="font" style="height: 20px;"
-	onchange="shoutbox.insertBBCode'[font=' + this.value + ']','[\/font]')">
+	onchange="shoutbox.insertBBCode('[font=' + this.value + ']','[\/font]')">
 	<option value="" selected="selected">Schriftart:</option>
 	<option value="arial" style="font-family: Arial;">Arial</option>
 	<option value="comic sans ms" style="font-family: Comic Sans MS;">Comic
@@ -169,7 +169,7 @@ $this->user->getPermission('user.shoutbox.bbcode.font')} <select
 </select> {/if} {if
 $this->user->getPermission('user.shoutbox.bbcode.color')} <select
 	name="fontcolor" style="height: 20px;"
-	onchange="shoutbox.insertBBCode'[color=' + this.value + ']','[\/color]')">
+	onchange="shoutbox.insertBBCode('[color=' + this.value + ']','[\/color]')">
 	<option value="" selected="selected">Schriftfarbe:</option>
 	<option value="skyblue" style="color: skyblue;">Himmelblau</option>
 	<option value="royalblue" style="color: royalblue;">Königsblau</option>
