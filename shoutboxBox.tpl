@@ -1,4 +1,4 @@
-<script tyype = "text/javascript">
+<script type = "text/javascript">
 smilies = null;
 function toggle(obj) {
 	var el = document.getElementById(obj);
@@ -127,7 +127,7 @@ function saveSmilieStatus(value) {
 {if SHOUTBOX_ENABLE_SMILEY_LIST}
 	<div class="" 
 			id="shoutboxSmileyContainer" 
-			style="display: none">
+			style="display: none; max-height:300px;overflow:auto;">
 {/if}
 {if $this->user->shoutboxSmilieStatus == 1}
 	<script type="text/javascript">
@@ -136,16 +136,6 @@ function saveSmilieStatus(value) {
 		//]]>
 	</script>
 {/if}
-<ul class="smileys">
-	{foreach from=$box->smileys item=smiley}
-		<li>
-			<img onmouseover="this.style.cursor='pointer'"
-					onclick="shoutbox.insertSmiley('{$smiley->smileyCode|encodeJS}');"
-					src="{$smiley->getURL()}" alt=""
-					title="{lang}{$smiley->smileyTitle}{/lang}" />
-		</li>
-	{/foreach}
-</ul>
 {if $this->user->getPermission('user.shoutbox.bbcode.b')} 
 	<img src="wcf/icon/wysiwyg/fontStyleBoldM.png"
 			onclick="shoutbox.insertBBCode('[b]','[\/b]');" 
@@ -295,7 +285,16 @@ function saveSmilieStatus(value) {
 			onclick="shoutbox.insertBBCode('[c]','[\/c]');" 
 			alt="" /> {/if}</div>
 {/if} 
-
+<ul class="smileys">
+	{foreach from=$box->smileys item=smiley}
+		<li>
+			<img onmouseover="this.style.cursor='pointer'"
+					onclick="shoutbox.insertSmiley('{$smiley->smileyCode|encodeJS}');"
+					src="{$smiley->getURL()}" alt=""
+					title="{lang}{$smiley->smileyTitle}{/lang}" />
+		</li>
+	{/foreach}
+</ul>
 </div>
 </div>
 </div>
