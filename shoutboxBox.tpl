@@ -25,13 +25,11 @@ function saveSmilieStatus(value) {
 			src="{icon}minusS.png{/icon}" id="{@$box->getStatusVariable()}Image"
 			alt="" />
 		</a>
-
-		</div>
+	</div>
 	<div class="containerContent">
 		<h3>{lang}wbb.portal.box.shoutbox.title{/lang}</h3>
 	</div>
 </div>
-	</div>
 <div class="container-1" id="{@$box->getStatusVariable()}">
 <div class="containerContent">
 	<script type="text/javascript"
@@ -259,5 +257,6 @@ function saveSmilieStatus(value) {
 </div>
 {/if} 
 {/if}
+</div>
 </div>
 </div>
