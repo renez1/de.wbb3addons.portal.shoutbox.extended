@@ -48,7 +48,6 @@ function saveSmilieStatus(value) {
 					me: {@$entry->me},
 					isDeletable: {@$entry->isDeletable()|intval},
 					toUserID: {@$entry->toUserID},
-					styledToUserName: '{@$entry->getStyledToUsername()|encodeJS}',
 					toUserName: '{@$entry->toUserName}',
 					prefix: '{@$entry->getWhisperPrefix()|encodeJS}'
 				});
@@ -80,15 +79,8 @@ function saveSmilieStatus(value) {
 							src="{icon}deleteS.png{/icon}" alt="" /></a> 
 					{/if} 
 					<span style="font-weight: bold;">{@$entry->getWhisperPrefix()}</span> 
-						{if $entry->userID != 0} 
-							{if $entry->toUserID != $this->user->userID && $entry->toUserID != 0} 
-								<a href="#" style="text-decoration: none;">{@$entry->getStyledToUsername()}</a>
-							{elseif $entry->toUserID = $this->user->userID || $entry->toUserID = 0}									
+								
 								<a href="#" style="text-decoration: none;">{@$entry->getStyledUsername()}</a>
-							{/if} 
-						{else} 
-							{@$entry->getStyledUsername()} 
-						{/if} 
 						{if $entry->me = 0} :
 							{@$entry->getFormattedMessage()}</p>
 						{elseif $entry->me = 1} 

@@ -7,8 +7,8 @@
 		<packagedescription><![CDATA[Adds the shoutbox to the portal.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Fügt die Shoutbox dem Portal hinzu.]]></packagedescription>
 		<packagedescription language="de-informal"><![CDATA[Fügt die Shoutbox dem Portal hinzu.]]></packagedescription>
-		<version>2.0.4</version>
-		<date>2011-12-02</date>
+		<version>2.0.5</version>
+		<date>2012-02-29</date>
 		<plugin>com.woltlab.wbb</plugin>
 	</packageinformation>
 
@@ -20,8 +20,8 @@
 	<requiredpackages>
 		<requiredpackage minversion="1.1.6">com.woltlab.wcf</requiredpackage>
 		<requiredpackage minversion="2.1.0">com.woltlab.wbb</requiredpackage>
-		<requiredpackage minversion="2.0.0">com.wcfsolutions.wcf.shoutbox.fork.i2c</requiredpackage>
-		<requiredpackage minversion="1.0.0">com.wcfsolutions.wcf.shoutbox.wbb.fork.i2c</requiredpackage>
+		<requiredpackage minversion="2.0.6">com.wcfsolutions.wcf.shoutbox.fork.i2c</requiredpackage>
+		<requiredpackage minversion="1.0.1">com.wcfsolutions.wcf.shoutbox.wbb.fork.i2c</requiredpackage>
 		<requiredpackage minversion="2.2.1">com.woltlab.community.portal</requiredpackage>
 	</requiredpackages>
 
@@ -55,6 +55,10 @@
 		<templates>templates.tar</templates>
 	</instructions>
 		<instructions type="update" fromversion="2.0.3">
+		<templates>templates.tar</templates>
+	</instructions>
+		</instructions>
+		<instructions type="update" fromversion="2.0.4">
 		<templates>templates.tar</templates>
 	</instructions>
 </package>
