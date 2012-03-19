@@ -57,7 +57,6 @@
 		<instructions type="update" fromversion="2.0.3">
 		<templates>templates.tar</templates>
 	</instructions>
-		</instructions>
 		<instructions type="update" fromversion="2.0.4">
 		<templates>templates.tar</templates>
 	</instructions>
