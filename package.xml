@@ -47,17 +47,22 @@
 	</instructions>
 	<instructions type="update" fromversion="2.0.0">
 		<templates>templates.tar</templates>
+		<files>files.tar</files>
 	</instructions>
 	<instructions type="update" fromversion="2.0.1">
 		<templates>templates.tar</templates>
+		<files>files.tar</files>
 	</instructions>
 	<instructions type="update" fromversion="2.0.2">
 		<templates>templates.tar</templates>
+		<files>files.tar</files>
 	</instructions>
 		<instructions type="update" fromversion="2.0.3">
 		<templates>templates.tar</templates>
+		<files>files.tar</files>
 	</instructions>
 		<instructions type="update" fromversion="2.0.4">
 		<templates>templates.tar</templates>
+		<files>files.tar</files>
 	</instructions>
 </package>
