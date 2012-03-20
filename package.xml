@@ -8,7 +8,7 @@
 		<packagedescription language="de"><![CDATA[Fügt die Shoutbox dem Portal hinzu.]]></packagedescription>
 		<packagedescription language="de-informal"><![CDATA[Fügt die Shoutbox dem Portal hinzu.]]></packagedescription>
 		<version>2.0.5</version>
-		<date>2012-02-29</date>
+		<date>2012-03-20</date>
 		<plugin>com.woltlab.wbb</plugin>
 	</packageinformation>
 
